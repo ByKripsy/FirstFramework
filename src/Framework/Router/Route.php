@@ -1,5 +1,5 @@
 <?php
-namespace Framework;
+namespace Framework\Router;
 
 /**
  * Class Route
@@ -30,17 +30,20 @@ class Route{
      * @return string
      */
     public function getName(): string {
+        return $this->name;
     }
 
     /**
      * @return callable
      */
-    public function getCallback():callable {
+    public function getCallback(): callable {
+        $this->callback;
     }
 
     /**
      * @return string[] Liste des paramètres
      */
-    public function getParameters():array {
+    public function gerParams(): array {
+        $this->parameters;
     }
 }
